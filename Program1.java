@@ -18,7 +18,8 @@ class Program1 extends ConsoleProgram {
     intY2 = readInt("Enter Y2: ");
 
     dblDist = getDistance(intX1, intY1, intX2, intY2);
-    System.out.println("This distance between points is " + dblDist);
+    System.out.println("This distance between points is " + distance);
+
   }
 
 
@@ -30,10 +31,11 @@ class Program1 extends ConsoleProgram {
   * @param y_2 x value of the second point
   * @return the distance between the two points
   */
-  private double getDistance(int x_1, int y_1, int x_2, int y_2){
+  private double getDistance(int x_1, int y_1, int x_2, int y_2) {
     
     double distance = Math.sqrt(Math.pow(x_2 - x_1,2)+ Math.pow(y_2 - y_1,2));
     return distance;
+    
   }
 
 }
