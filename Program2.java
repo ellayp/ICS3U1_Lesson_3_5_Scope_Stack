@@ -8,7 +8,7 @@ class Program2 extends ConsoleProgram {
   int width;
   int height;
   
-  public void run(){
+  public void run() {
 
     String colour;
 
@@ -17,22 +17,25 @@ class Program2 extends ConsoleProgram {
 
     height = readInt("Enter the height: ");
   
-    System.out.println("The " + colour + "rectangle's area is " + getArea());
-    System.out.println("The " + colour + "rectangle's perimeter is " + getPerimeter());
-}
+    System.out.println("The " + colour + " rectangle's area is " + getArea());
+    System.out.println("The " + colour + " rectangle's perimeter is " + getPerimeter());
+
+  }
 
   /**
-   * compute the area of a rectangle
+   * Compute the area of a rectangle
    * @return the area of the rectangle
+   * @author: E. Fabroa
    */
-  private int getArea(){
-    int width2 = 0;
+  private int getArea() {
+    int width = 0;
     return width * height;
   }
 
   /**
-   * compute the perimeter of a rectangle
+   * Compute the perimeter of a rectangle
    * @return the perimeter of the rectangle
+   * @author: E. Fabroa
    */
   private int getPerimeter(){
     int width2 = width * 2;
