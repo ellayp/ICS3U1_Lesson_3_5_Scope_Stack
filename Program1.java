@@ -18,7 +18,7 @@ class Program1 extends ConsoleProgram {
     intY2 = readInt("Enter Y2: ");
 
     dblDist = getDistance(intX1, intY1, intX2, intY2);
-    System.out.println("This distance between points is " + distance);
+    System.out.println("This distance between points is " + dblDist);
 
   }
 
